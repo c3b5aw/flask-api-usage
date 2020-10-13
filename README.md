@@ -23,8 +23,43 @@ Usage.init_app(flask_app)
 Usage(flask_app)
 ```
 
+## Addon available document
+```
+{
+    "_id" : ObjectId,
+    "date" : ISODate,
+    "exception" : str,
+    "method" : str,
+    "path" : str,
+    "url" : str,
+    "status_code" : int,
+    "response" : {
+        "content_length" : int,
+        "mimetype" : str,
+        "headers" : dict,
+        "body" : dict
+    },
+    "client" : {
+        "referer" : str,
+        "authorization" : str,
+        "origin" : str,
+        "remote_address" : str
+        "user_agent" : str,
+        "platform" : str,
+        "browser" : str
+    },
+    "request" : {
+        "elapsed_time" : float,
+        "content_length" : int,
+        "mimetype" : str,
+        "body" : dict,
+        "headers" : dict,
+        "args" : dict
+    }
+}
+```
+
 ## Exemple document created while fetching configuration before stripe request.
-You can see each parameters of the addon.
 
 ```
 {
