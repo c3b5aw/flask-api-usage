@@ -7,7 +7,8 @@ def create_app():
 
 	app.config['USAGE_MONGODB_SETTINGS'] = {
 		'db': 'flask',
-		'host': 'mongodb://localhost:27017/'
+		'host': 'mongodb://localhost:27017/',
+		'alias': 'flask-usage'
 	}
 
 	usage.init_app(app)
