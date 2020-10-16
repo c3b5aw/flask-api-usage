@@ -10,7 +10,8 @@ mongoURI = 'mongodb://localhost:1234/'
 
 flask_app.config['USAGE_MONGODB_SETTINGS'] = {
     'db': db,
-    'host': mongoURI
+    'host': mongoURI,
+    'alias': 'flask-usage'
 }
 
 # === Way 1 ===
